@@ -111,9 +111,9 @@ Possible solutions:
 
 ## It's not all bad!{background-image="assets/images/pawel-czerwinski-6lQDFGOB1iw-unsplash.jpg" background-opacity="0.3" background-position="center"}
 
-+ Jupyter notebook integration
-+ Github actions
-+ Matlab Online
++ [Jupyter notebook integration](https://uk.mathworks.com/products/reference-architectures/jupyter.html)
++ [Github actions](https://github.com/matlab-actions)
++ [Matlab Online](https://www.mathworks.com/products/matlab-online.html)
 
 :::{.notes}
 + MathWorks are working hard to integrate with open source
