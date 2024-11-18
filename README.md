@@ -1,12 +1,11 @@
-# Template for Quarto Presentations with GitHub Actions
+# Reproducibility by any means necessary - lessons from MATLAB
 
-Template repository for Quarto presentations with GitHub actions to build and host the presentation using GitHub pages.
+A talk for the University of Sheffield Open Research Conversations, 20th November 2024.
 
-## Using this template
+
+## Using this repository
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 
- 1. On the [GitHub repo](https://github.com/davidwilby/quarto-presentation-template) click the **Use this template** button to create a copy of it in your account.
- 2. Add content to `index.qmd`, check out [Quarto's guide](https://quarto.org/docs/presentations/) on more about writing presentations with Quarto.
 
 ## Rendering the slides locally
 These slides are produced using [Quarto](https://quarto.org).

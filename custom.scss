@@ -1,0 +1,42 @@
+/*-- scss:defaults --*/
+
+$body-bg: #353535;
+// $body-color: #fff;
+// $link-color: #42affa;
+
+/*-- scss:rules --*/
+
+// .reveal .slide blockquote {
+//   border-left: 3px solid $text-muted;
+//   padding-left: 0.5em;
+// }
+
+// $body-bg: #555555 !default;
+
+$presentation-h1-font-size: 0.8em !default;
+
+// .title {
+//     font-size: 60px !important;
+//   }
+
+.quarto-title-author-name {
+font-size: 0.5em;
+  }
+  
+.date {
+    font-size: 0.5em;
+}
+
+.photo-caption {
+    font-size: 0.3em;
+    position: absolute;
+    bottom: -20px;
+    right: -50px;
+}
+
+.photo-caption-header {
+    font-size: 0.3em;
+    position: absolute;
+    bottom: -550px;
+    right: -20px;
+}

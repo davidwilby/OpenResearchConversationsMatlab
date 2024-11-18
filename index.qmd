@@ -1,25 +1,119 @@
 ---
-title: "Template for Quarto Presentations with GitHub actions"
+title: "Reproducibility<br>*by any means necessary*<br><span style='font-size: 0.5em;'>Lessons from MATLAB</span>"
 format:
     revealjs:
-        theme: [serif] # More themes at https://quarto.org/docs/presentations/revealjs/themes.html
+        theme: [night,custom.scss] # More themes at https://quarto.org/docs/presentations/revealjs/themes.html
         slide-number: true
         show-slide-number: speaker
         chalkboard: true
         code-line-numbers: false
         preview-links: auto
-author: "David Wilby"
-date: 04/08/2024 #Date in US format... MM/DD/YYYY
+author: "Dr David Wilby<br>Research Software Engineer<br>British Antarctic Survey"
+date: 11/20/2024 #Date in US format... MM/DD/YYYY
 date-format: "ddd Do MMMM YYYY"
-footer: "these slides: [davidwilby.dev/quarto-presentation-template](https://davidwilby.dev/quarto-presentation-template) - {{< fa brands github >}} [improve this talk!](https://github.com/davidwilby/quarto-presentation-template)"
+footer: "these slides: [davidwilby.dev/OpenResearchConversationsMatlab](https://davidwilby.dev/OpenResearchConversationsMatlab) - {{< fa brands github >}} [improve this talk!](https://github.com/davidwilby/OpenResearchConversationsMatlab)"
 from: markdown+emoji
+title-slide-attributes:
+  data-background-image: assets/images/joshua-sortino-LqKhnDzSF-8-unsplash.jpg
+#   data-background-size: contain
+  data-background-opacity: "0.2"
 ---
 
-## First slide!
+# Reproducibility{background-image="assets/images/national-cancer-institute-J28Nn-CDbII-unsplash.jpg" background-opacity="0.3"}
 
-## Second slide! {.smaller}
+:::{.notes}
+Let's start by assuming that, in this audience at least, we can agree that open research practices are important.
 
-Content!
+When it comes to sharing our code openly, that's a good start, but it would be even better if the code worked for other people.
 
-Emojis are supported :smile:
+So they can use it, examine what we've done and build upon it.
 
+When it comes to code, this is easier said than done.
+:::
+
+# Some elements of reproducible code {background-image="assets/images/thomas-kinto-D4y02rR6Ybo-unsplash.jpg" background-opacity="0.3"}
+
+::: {.incremental}
+1. Availability
+1. Code readability
+1. Follow community conventions
+1. Dependency specification
+1. Try your best!
+:::
+
+# MATLAB{background-image="assets/images/jr-korpa-sYsUStxY8bQ-unsplash.jpg" background-opacity="0.5"}
+
+:::{.notes}
++ Mathematical programming language turned general purpose language
++ Relatively user-friendly,
++ Bundled integrated development environment (IDE),
++ Historically popular in many undergrad courses, particularly engineering,
++ Has some built-in toolboxes and functionality for maths/modelling,
++ Proprietary - commercial license
++ Every Russell Group University has a MATLAB license
+:::
+
+---
+
+![](assets/images/MATLAB-editor.png)
+
+# Proprietary software and reproducibility {background-image="assets/images/stormseeker-rX12B5uX7QM-unsplash.jpg" background-opacity="0.2"}
+
+:::{.notes}
++ Arguably/Genuinely obtaining a license for MATLAB is a barrier to reproducibility
++ So why bother?
++ My position is that it is better to pursue reproducibility than to just give up.
++ It is harder for the community to create their own tooling, relying on the owners to enable it
+:::
+
+
+# So what do we do about it?!{background-image="assets/images/thom-milkovic-l15cuAnXhOg-unsplash.jpg" background-position="bottom" background-color="white" background-opacity="0.5"}
+
++ Try your best!
++ Advocate for better
++ Maybe choose a different tool next time?
++ Apply a license to your code
++ Find (or create) a community
+
+
+# Clearing up a misconception {background-image="assets/images/batu-gezer-EtMBh8YF3e8-unsplash.jpg" background-opacity="0.6"}
+
+::: {.fragment}
+**Your code** can be open source<br>even if the language itself is proprietary
+:::
+
+::: {.fragment}
+**However** you must give it a license
+:::
+
+## The missing package manager {background-image="assets/images/travis-murdock-gIJolYfd_58-unsplash.jpg" background-opacity="0.3"}
+
+:::{.notes}
+One notable missing tool is one to install dependencies.
+In software, we nearly always use other people's software to make our software work.
+Software is sometimes organised as "packages" - installable, versioned pieces of software.
+In other languages we use "package managers"
+:::
+
+
+
+
+
+
+
+
+
+
+
+## Image Credits :camera:
+
+On <a href="https://unsplash.com/photos/a-blurry-image-of-lines-in-the-dark-D4y02rR6Ybo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>:
+
++ <a href="https://unsplash.com/@sortino?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Joshua Sortino
++ <a href="https://unsplash.com/@nci?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">National Cancer Institute</a> 
++ <a href="https://unsplash.com/@thomaskinto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Thomas Kinto</a>
++ <a href="https://unsplash.com/@jrkorpa?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jr Korpa</a>
++ <a href="https://unsplash.com/@sseeker?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Stormseeker</a>
++ <a href="https://unsplash.com/@gezerbatu?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Batu Gezer</a>
++ <a href="https://unsplash.com/@tmurdock0208?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Travis Murdock</a>
++ <a href="https://unsplash.com/@thommilkovic?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Thom Milkovic</a>
