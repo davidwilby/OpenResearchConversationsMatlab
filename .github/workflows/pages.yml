@@ -12,6 +12,21 @@ jobs:
     steps:
       - name: Check out repo
         uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+    
+      - name: Set up MATLAB
+        uses: matlab-actions/setup-matlab@v2
+        with:
+          release: R2024a
+
+      - name: Install python dependencies
+        run: |
+          export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/hostedtoolcache/MATLAB/2024.1.999/x64/bin/glnxa64
+          pip install "matlabengine==24.1.2"
+          pip install git+https://github.com/allefeld/mkernel.git
+          pip install nbformat nbclient
    
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
