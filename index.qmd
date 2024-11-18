@@ -53,7 +53,7 @@ When it comes to code, this is easier said than done.
 + Every Russell Group University has a MATLAB license
 :::
 
----
+## {background-image="assets/images/jr-korpa-sYsUStxY8bQ-unsplash.jpg" background-opacity="0.5"}
 
 ![](assets/images/MATLAB-editor.png)
 
@@ -86,26 +86,56 @@ When it comes to code, this is easier said than done.
 **However** you must give it a license
 :::
 
-## The missing package manager {background-image="assets/images/travis-murdock-gIJolYfd_58-unsplash.jpg" background-opacity="0.3"}
+# The missing package manager {background-image="assets/images/travis-murdock-gIJolYfd_58-unsplash.jpg" background-opacity="0.3"}
 
 :::{.notes}
 One notable missing tool is one to install dependencies.
 In software, we nearly always use other people's software to make our software work.
 Software is sometimes organised as "packages" - installable, versioned pieces of software.
-In other languages we use "package managers"
+In other languages we use "package managers".
+
+Possible solutions...
+
+MATLAB weirdly released something called a 'package manager' earlier this year
 :::
 
 
+:::{.fragment}
+Possible solutions:
+
+:::: {.incremental}
++ Just document the dependencies,
++ Actually copy in the dependencies' code (if reasonable)
+::::
+:::
+
+## It's not all bad!{background-image="assets/images/pawel-czerwinski-6lQDFGOB1iw-unsplash.jpg" background-opacity="0.3" background-position="center"}
+
++ Jupyter notebook integration
++ Github actions
++ Matlab Online
+
+:::{.notes}
++ MathWorks are working hard to integrate with open source
+:::
+
+# Lessons{background-image="assets/images/pawel-czerwinski-2CX_J3qAg80-unsplash.jpg" background-color="white" background-opacity="0.3"}
+
++ Make good choices
++ Work with a community
++ Make your code available
++ Try your best!
+
+
+# Plug!{background-image="assets/images/nasa-Q1p7bh3SHj8-unsplash.jpg" background-opacity="0.3"}
+
+Come and contribute to the reproducible MATLAB project!
+
+{{< fa brands github >}} [github.com/reproducibleMATLAB](https://github.com/reproducibleMATLAB/){target=_blank}
 
 
 
-
-
-
-
-
-
-## Image Credits :camera:
+## Image Credits :camera: {.smaller}
 
 On <a href="https://unsplash.com/photos/a-blurry-image-of-lines-in-the-dark-D4y02rR6Ybo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>:
 
@@ -117,3 +147,5 @@ On <a href="https://unsplash.com/photos/a-blurry-image-of-lines-in-the-dark-D4y0
 + <a href="https://unsplash.com/@gezerbatu?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Batu Gezer</a>
 + <a href="https://unsplash.com/@tmurdock0208?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Travis Murdock</a>
 + <a href="https://unsplash.com/@thommilkovic?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Thom Milkovic</a>
++ <a href="https://unsplash.com/@pawel_czerwinski?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Pawel Czerwinski</a>
++ <a href="https://unsplash.com/@nasa?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">NASA</a>
