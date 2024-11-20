@@ -22,6 +22,22 @@ Full instructions can be found at the link above, however in brief:
 * In RStudio, open `index.qmd`, above the document click `Render`
 * In the terminal, run `quarto render` to build the files, or `quarto preview` to spin up the preview server.
 
+### Running MATLAB code cells
+
+This presentation experimentally uses `mkernel` to run MATLAB code cells inside Quarto.
+
+`mkernel` depends on `matlabengine` (the MATLAB engine for python), which is fun to install.
+
+You may need to run the following commands from shell first, e.g. in Linux run the following, replacing `<matlabroot>` with the location of your MATLAB installation, e.g. `/usr/local/MATLAB/R2023a/`.
+
+```sh
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:<matlabroot>/bin/glnxa64
+pip install matlabengine
+```
+
+```sh
+pip install git+https://github.com/allefeld/mkernel.git
+```
 
 ## Contributing
 Contributions and improvements are very welcome! Please fork this repo and make a pull request against the `main` branch.
