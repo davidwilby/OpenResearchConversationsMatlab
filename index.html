@@ -362,11 +362,12 @@ Dr David Wilby<br>Research Software Engineer<br>British Antarctic Survey
       }</style></aside>
 </section>
 
-<section id="some-elements-of-reproducible-code" class="title-slide slide level1 center" data-background-image="assets/images/thomas-kinto-D4y02rR6Ybo-unsplash.jpg" data-background-opacity="0.3">
+<section id="some-elements-of-reproducible-code" class="title-slide slide level1 smaller center" data-background-image="assets/images/thomas-kinto-D4y02rR6Ybo-unsplash.jpg" data-background-opacity="0.3">
 <h1>Some elements of reproducible code</h1>
 <div>
 <ol start="0" type="1">
 <li class="fragment">Availability</li>
+<li class="fragment">FAIR data</li>
 <li class="fragment">Code readability</li>
 <li class="fragment">Documentation</li>
 <li class="fragment">Follow community conventions</li>
@@ -374,6 +375,27 @@ Dr David Wilby<br>Research Software Engineer<br>British Antarctic Survey
 <li class="fragment">Try your best!</li>
 </ol>
 </div>
+<aside class="notes">
+<ol start="0" type="1">
+<li>Availability - code and any required software must be attainable</li>
+<li>FAIR data -</li>
+<li>Code readability - <em>technically</em> not absolutely necessary</li>
+<li>Documentation - most code is not implicitly obvious how to use</li>
+<li>Follow community conventions - it helps if people find code laid out how they expect, don’t reinvent the wheel</li>
+<li>Dependency specification - most code depends on other code or software, you should define how to get it and which version</li>
+<li>Try your best! - it’s actually kind of difficult and every case is different, don’t give up!</li>
+</ol>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 
 <section>
@@ -388,6 +410,7 @@ Dr David Wilby<br>Research Software Engineer<br>British Antarctic Survey
 <li>Has some built-in toolboxes and functionality for maths/modelling,</li>
 <li>Proprietary - commercial license</li>
 <li>Every Russell Group University has a MATLAB license</li>
+<li>Has relatively good documentation</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -404,15 +427,23 @@ Dr David Wilby<br>Research Software Engineer<br>British Antarctic Survey
 <section id="section" class="slide level2" data-background-image="assets/images/jr-korpa-sYsUStxY8bQ-unsplash.jpg" data-background-opacity="0.5">
 <h2></h2>
 
-<img data-src="assets/images/MATLAB-editor.png" class="r-stretch"></section></section>
+<img data-src="assets/images/MATLAB-editor.png" class="r-stretch"></section>
+<section id="section-1" class="slide level2" data-background-image="assets/images/jr-korpa-sYsUStxY8bQ-unsplash.jpg" data-background-opacity="0.5">
+<h2></h2>
+
+<img data-src="assets/images/Matlab_Logo.png" class="r-stretch"><div class="photo-caption">
+<p><a href="https://en.m.wikipedia.org/wiki/File:Matlab_Logo.png">https://en.m.wikipedia.org/wiki/File:Matlab_Logo.png</a></p>
+</div>
+</section></section>
 <section id="proprietary-software-and-reproducibility" class="title-slide slide level1 center" data-background-image="assets/images/stormseeker-rX12B5uX7QM-unsplash.jpg" data-background-opacity="0.2">
 <h1>Proprietary software and reproducibility</h1>
 <aside class="notes">
 <ul>
 <li>Arguably/Genuinely obtaining a license for MATLAB is a barrier to reproducibility</li>
+<li>Code and data formats may require paid for software to read</li>
+<li>It is harder for the community to create their own tooling, relying on the owners to enable it</li>
 <li>So why bother?</li>
 <li>My position is that it is better to pursue reproducibility than to just give up.</li>
-<li>It is harder for the community to create their own tooling, relying on the owners to enable it</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -427,28 +458,6 @@ Dr David Wilby<br>Research Software Engineer<br>British Antarctic Survey
       }</style></aside>
 </section>
 
-<section id="so-what-do-we-do-about-it" class="title-slide slide level1 center" data-background-image="assets/images/thom-milkovic-l15cuAnXhOg-unsplash.jpg" data-background-position="bottom" data-background-color="white" data-background-opacity="0.5">
-<h1>So what do we do about it?!</h1>
-<ul>
-<li>Try your best!</li>
-<li>Advocate for better</li>
-<li>Maybe choose a different tool next time?</li>
-<li>Apply a license to your code</li>
-<li>Find (or create) a community</li>
-</ul>
-</section>
-
-<section id="clearing-up-a-misconception" class="title-slide slide level1 center" data-background-image="assets/images/batu-gezer-EtMBh8YF3e8-unsplash.jpg" data-background-opacity="0.6">
-<h1>Clearing up a misconception</h1>
-<div class="fragment">
-<p><strong>Your code</strong> can be open source<br>even if the language itself is proprietary</p>
-</div>
-<div class="fragment">
-<p><strong>However</strong> you must give it a license</p>
-</div>
-</section>
-
-<section>
 <section id="the-missing-package-manager" class="title-slide slide level1 center" data-background-image="assets/images/travis-murdock-gIJolYfd_58-unsplash.jpg" data-background-opacity="0.3">
 <h1>The missing package manager</h1>
 <aside class="notes">
@@ -474,6 +483,51 @@ Dr David Wilby<br>Research Software Engineer<br>British Antarctic Survey
 <li class="fragment">Actually copy in the dependencies’ code (if reasonable)</li>
 </ul>
 </div>
+</div>
+</section>
+
+<section id="so-what-do-we-do-about-it" class="title-slide slide level1 center" data-background-image="assets/images/thom-milkovic-l15cuAnXhOg-unsplash.jpg" data-background-position="bottom" data-background-color="white" data-background-opacity="0.5">
+<h1>So what do we do about it?!</h1>
+<div>
+<ul>
+<li class="fragment">Try your best!</li>
+<li class="fragment">Apply an open source license to your code</li>
+<li class="fragment">Make the most open choices you can</li>
+<li class="fragment">Find (or create) a community</li>
+<li class="fragment">Advocate for better</li>
+<li class="fragment">Maybe choose a different tool next time?</li>
+</ul>
+</div>
+<aside class="notes">
+<ul>
+<li>If you don’t try, your code won’t be reproducible</li>
+<li>Make you code available on GitHub, GitLab, Zenodo or similar AND give it an open source license so others can reuse it</li>
+<li>Choose open data and file formats wherever possible - in MATLAB avoid <code>.mat</code> and <code>.fig</code> files, maybe avoid livescripts but consider creating a repo that can be opened in MATLAB online</li>
+<li>Work with your colleagues or friends to try out your code and point out where more might be needed to make it reproducible, reach out to experts at your institution or in your field</li>
+<li>Ask MathWorks/the owners of your software to consider improving facilities for reproducibility in the language</li>
+<li>Think about whether the tool you’re used to using is really serving your purposes</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+
+<section>
+<section id="clearing-up-a-misconception" class="title-slide slide level1 center" data-background-image="assets/images/batu-gezer-EtMBh8YF3e8-unsplash.jpg" data-background-opacity="0.6">
+<h1>Clearing up a misconception</h1>
+<div class="fragment">
+<p><strong>Your code</strong> can be open source<br>even if the language itself is proprietary</p>
+</div>
+<div class="fragment">
+<p><strong>However</strong> you must give it a license</p>
 </div>
 </section>
 <section id="its-not-all-bad" class="slide level2" data-background-image="assets/images/pawel-czerwinski-6lQDFGOB1iw-unsplash.jpg" data-background-opacity="0.3" data-background-position="center">
