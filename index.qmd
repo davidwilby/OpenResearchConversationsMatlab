@@ -31,10 +31,11 @@ So they can use it, examine what we've done and build upon it.
 When it comes to code, this is easier said than done.
 :::
 
-# Some elements of reproducible code {background-image="assets/images/thomas-kinto-D4y02rR6Ybo-unsplash.jpg" background-opacity="0.3"}
+# Some elements of reproducible code {.smaller background-image="assets/images/thomas-kinto-D4y02rR6Ybo-unsplash.jpg" background-opacity="0.3"}
 
 ::: {.incremental}
 0. Availability
+1. FAIR data
 1. Code readability
 1. Documentation
 1. Follow community conventions
@@ -42,7 +43,17 @@ When it comes to code, this is easier said than done.
 1. Try your best!
 :::
 
-# MATLAB{background-image="assets/images/jr-korpa-sYsUStxY8bQ-unsplash.jpg" background-opacity="0.5"}
+:::{.notes}
+0. Availability - code and any required software must be attainable
+1. FAIR data - 
+1. Code readability - *technically* not absolutely necessary
+1. Documentation - most code is not implicitly obvious how to use
+1. Follow community conventions - it helps if people find code laid out how they expect, don't reinvent the wheel
+1. Dependency specification - most code depends on other code or software, you should define how to get it and which version
+1. Try your best! - it's actually kind of difficult and every case is different, don't give up!
+:::
+
+# MATLAB {background-image="assets/images/jr-korpa-sYsUStxY8bQ-unsplash.jpg" background-opacity="0.5"}
 
 :::{.notes}
 + Mathematical programming language turned general purpose language
@@ -52,40 +63,31 @@ When it comes to code, this is easier said than done.
 + Has some built-in toolboxes and functionality for maths/modelling,
 + Proprietary - commercial license
 + Every Russell Group University has a MATLAB license
++ Has relatively good documentation
 :::
 
 ## {background-image="assets/images/jr-korpa-sYsUStxY8bQ-unsplash.jpg" background-opacity="0.5"}
 
 ![](assets/images/MATLAB-editor.png)
 
+## {background-image="assets/images/jr-korpa-sYsUStxY8bQ-unsplash.jpg" background-opacity="0.5"}
+
+![](assets/images/Matlab_Logo.png)
+
+:::{.photo-caption}
+[https://en.m.wikipedia.org/wiki/File:Matlab_Logo.png](https://en.m.wikipedia.org/wiki/File:Matlab_Logo.png)
+:::
+
 # Proprietary software and reproducibility {background-image="assets/images/stormseeker-rX12B5uX7QM-unsplash.jpg" background-opacity="0.2"}
 
 :::{.notes}
 + Arguably/Genuinely obtaining a license for MATLAB is a barrier to reproducibility
++ Code and data formats may require paid for software to read
++ It is harder for the community to create their own tooling, relying on the owners to enable it
 + So why bother?
 + My position is that it is better to pursue reproducibility than to just give up.
-+ It is harder for the community to create their own tooling, relying on the owners to enable it
 :::
 
-
-# So what do we do about it?!{background-image="assets/images/thom-milkovic-l15cuAnXhOg-unsplash.jpg" background-position="bottom" background-color="white" background-opacity="0.5"}
-
-+ Try your best!
-+ Advocate for better
-+ Maybe choose a different tool next time?
-+ Apply a license to your code
-+ Find (or create) a community
-
-
-# Clearing up a misconception {background-image="assets/images/batu-gezer-EtMBh8YF3e8-unsplash.jpg" background-opacity="0.6"}
-
-::: {.fragment}
-**Your code** can be open source<br>even if the language itself is proprietary
-:::
-
-::: {.fragment}
-**However** you must give it a license
-:::
 
 # The missing package manager {background-image="assets/images/travis-murdock-gIJolYfd_58-unsplash.jpg" background-opacity="0.3"}
 
@@ -109,6 +111,38 @@ Possible solutions:
 + Actually copy in the dependencies' code (if reasonable)
 ::::
 :::
+
+
+# So what do we do about it?!{background-image="assets/images/thom-milkovic-l15cuAnXhOg-unsplash.jpg" background-position="bottom" background-color="white" background-opacity="0.5"}
+
+::: {.incremental}
++ Try your best!
++ Apply an open source license to your code
++ Make the most open choices you can
++ Find (or create) a community
++ Advocate for better
++ Maybe choose a different tool next time?
+:::
+
+:::{.notes}
++ If you don't try, your code won't be reproducible
++ Make you code available on GitHub, GitLab, Zenodo or similar AND give it an open source license so others can reuse it
++ Choose open data and file formats wherever possible - in MATLAB avoid `.mat` and `.fig` files, maybe avoid livescripts but consider creating a repo that can be opened in MATLAB online
++ Work with your colleagues or friends to try out your code and point out where more might be needed to make it reproducible, reach out to experts at your institution or in your field
++ Ask MathWorks/the owners of your software to consider improving facilities for reproducibility in the language
++ Think about whether the tool you're used to using is really serving your purposes
+:::
+
+# Clearing up a misconception {background-image="assets/images/batu-gezer-EtMBh8YF3e8-unsplash.jpg" background-opacity="0.6"}
+
+::: {.fragment}
+**Your code** can be open source<br>even if the language itself is proprietary
+:::
+
+::: {.fragment}
+**However** you must give it a license
+:::
+
 
 ## It's not all bad!{background-image="assets/images/pawel-czerwinski-6lQDFGOB1iw-unsplash.jpg" background-opacity="0.3" background-position="center"}
 
